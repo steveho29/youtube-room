@@ -1,0 +1,34 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:mintcream;
+    color:dimgrey;
+}
+
+#main {
+    position: flex;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#card{
+      width: '100%';
+      border-radius: 16;
+      box-shadow: '0 8px 16px 0 #BDC9D7';
+      overflow: 'hidden';
+}
