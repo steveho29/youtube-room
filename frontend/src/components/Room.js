@@ -268,7 +268,7 @@ export default class Room extends Component {
 
     renderAlert(){
         return (
-        <Alert severity="warning" onClose={()=>{this.setState({triggerAlert: false})}}> {this.state.alertValue} </Alert>)
+        <Alert severity="info" onClose={()=>{this.setState({triggerAlert: false})}}> {this.state.alertValue} </Alert>)
     }
     render () {
             const card = {
@@ -281,7 +281,7 @@ export default class Room extends Component {
                 <Card >
                     {this.renderYoutubePlayer()}
                     <IconButton onClick={() => {
-                        const alerts = ['Ai cho mà bấm ^^', 'Xịn k 😊 ^^', 'Hello 🙂', 'Kkkk', 'Bấm tui chi 😄' , 'Bị hack rồi nha 😜']
+                        const alerts = ['Man starts over again everyday, in spite of all he knows, against all he knows. 😊', 'All great beginnings start in the dark, when the moon greets you to a new day at midnight. 🙂',  'Never underestimate the power you have to take your life in a new direction. 😄' , "It's a new dawn, It's a new day, It's a new life for me. And I'm feeling good. 😜"]
                         this.setState({alertValue: alerts[Math.floor(Math.random() * alerts.length)]}); 
                         this.setState({triggerAlert: true});
                         }}>

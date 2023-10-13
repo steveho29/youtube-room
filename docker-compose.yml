@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: youtube-room
+    volumes:
+      - .:/app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        pip install -r requirements.txt
+        python manage.py makemigrations
+        python manage.py migrate
+        python manage.py runserver 0.0.0.0:8000
+        tail -f /dev/null
+    network_mode: host
